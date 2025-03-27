@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduNews</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            line-height: 1.7;
+            color:#1f2937;
+            transition: all 0.4s ease;
+        }
+        header {
+            background: linear-gradient(130deg, #ff4757, #0b94f0);
+            padding: 25px;
+            position: sticky;
+            z-index: 1000;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 32px;
+            font-weight: 800;
+            color: #098ae0;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        nav a {
+            color: #dbeafe;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 18px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        nav .active,
+        nav a:hover {
+            background-color: #fff;
+            color: #1868e9;
+        }
+        .dark-mode {
+            background: #021e5a;
+            color: #d1d5db;
+        }
+        .dark-mode .card,
+        .dark-mode .sidebar-section,
+        .dark-mode footer {
+            background-color: #1f2937;
+        }
+        .theme-toggle {
+            background: #fbbf24;
+            color: #1f2937;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">EduNews</div>
+            <nav>
+                <a href="#home" class="active">Home</a>
+                <a href="#tech">Tech</a>
+                <a href="#science">Science</a>
+                <a href="#health">Health</a>
+                <a href="#wealth">Wealth</a>
+                <a href="#business">Business</a>
+                <a href="#crypto">Crypto</a>
+                <a href="#war">War</a>
+                <button class="theme-toggle">Dark Mode</button>
+            </nav>
+
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="content-wrapper">
+        </div>
+        <aside class="sidebar">
+        </aside>
+    </div>
+
+    <footer>
+        <p>© 2025 EduNews Portal. Built for student learning</p>
+    </footer>
+    
+</body>
+</html>
