@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerald</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background: linear-gradient(to right, #190340, #e35909e2);
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: white;
+            animation: slideDown 2s ease-out;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            color: #ff758c;
+        }
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        #intro {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            text-align: center;
+        }
+        #intro .card {
+            background: #e6f7ff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        #intro h2 {
+            margin-top: 0;
+        }
+        #intro button {
+            background: #ff758c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        #intro button:hover {
+            background: #ff5722;
+        }
+        #projects {
+            padding: 40px 20px;
+            background: #f9f9f9;
+        }
+        #projects h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            background: #00c4b4;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background: #006d5b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #ff758c;
+            animation: bounce 0.5s;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #121212;
+            color: #070303;
+       
+        }
+        header.dark-mode {
+            background: linear-gradient(to right, #333, #555);
+        }
+        .project-card.dark-mode {
+            background: #333;
+        }
+        footer.dark-mode {
+            background: #333;
+        }
+        #scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            display: none;
+            background: #ff758c;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        #scroll-to-top:hover {
+            background: #ff5722;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gerald</h1>
+        <nav>
+            <a href="#intro">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#footer">Contact</a>
+        </nav>
+    </header>
+    <section id="intro">
+        <div class="card">
+            <h2>Welcome to My Portfolio</h2>
+            <p>I'm Gerald! I'm a web developer passionate about crafting <span>user-friendly</span> websites. I have a keen eye for detail and a strong commitment to creating seamless user experiences.</p>
+            <p>I'm also <strong>very hardworking</strong> and dedicated to delivering high-quality work. I thrive in challenging environments and always strive to exceed expectations with my projects.</p>
+            <button onclick="toggleDarkMode()">Dark Mode</button>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <a href="catphotoapp.html" target="_blank"><div class="project-card">
+                <h3>Cat Photo App</h3>
+                <p>Description of project 1.</p>
+            </div></a>
+            <a href="cafemenu.html" target="_blank"><div class="project-card">
+                <h3>cafemenu</h3>
+                <p>Description of project 2.</p>
+            </div></a>
+            <a href="colormarkers.html" target="_blank"><div class="project-card">
+                <h3>colormarkers</h3>
+                <p>Description of project 3.</p>
+            </div></a>
+            <a href="AccessibilityQuiz.html" target="_blank"><div class="project-card">
+                <h3>Quiz</h3>
+                <p>Description of project 3.</p>
+            </div></a>
+            <a href="BalanceSheet.html" target="_blank"><div class="project-card">
+                <h3>Balance Sheet</h3>
+                <p>Description of project 3.</p>
+            </div></a>
+            <a href="CatPainting.html" target="_blank"><div class="project-card">
+                <h3>Cat Painting</h3>
+                <p>Description of project 3.</p>
+            </div></a>
+            <a href="ferrisWheel.html" target="_blank"><div class="project-card">
+                <h3>Ferris Wheel</h3>
+                <p>Description of project 3.</p>
+            </div></a>
+            <a href="landing.html" target="_blank"><div class="project-card">
+                <h3>Product Landing Page</h3>
+                <p>Description of project 3.</p>
+            </div></a>
+            <a href="magazine.html" target="_blank"><div class="project-card">
+                <h3>Magazine</h3>
+                <p>Description of project 3.</p>
+            </div></a>
+            <a href="NutritionLabel.html" target="_blank"><div class="project-card">
+                <h3>Nutrition Label</h3>
+                <p>Description of project 3.</p>
+            </div></a>
+            <a href="penguin.html" target="_blank"><div class="project-card">
+                <h3>Penguin</h3>
+                <p>Description of project 3.</p>
+            </div></a>
+            <a href="photogalery.html" target="_blank"><div class="project-card">
+                <h3>Photo Gallery</h3>
+                <p>Description of project 3.</p>
+            </div></a>
+            <a href="piano.html" target="_blank"><div class="project-card">
+                <h3>Piano</h3>
+                <p>Description of project 3.</p>
+            </div></a>
+            <a href="registartionform.html" target="_blank"><div class="project-card">
+                <h3>Registration Form</h3>
+                <p>Description of project 3.</p>
+            </div></a>
+            <a href="RothkoPainting.html" target="_blank"><div class="project-card">
+                <h3>Rothko Painting</h3>
+                <p>Description of project 3.</p>
+            </div></a>
+            <a href="skyline.html" target="_blank"><div class="project-card">
+                <h3>Skyline</h3>
+                <p>Description of project 3.</p>
+            </div></a>
+            <a href="tech.html" target="_blank"><div class="project-card">
+                <h3>Technical Documentation</h3>
+                <p>Description of project 3.</p>
+            </div></a>
+            <a href="survey.html" target="_blank"><div class="project-card">
+                <h3>Survey</h3>
+                <p>Description of project 3.</p>
+            </div></a>
+            <a href="tribute.html" target="_blank"><div class="project-card">
+                <h3>Tribute Page</h3>
+                <p>Description of project 3.</p>
+            </div></a>
+        </div>
+    </section>
+    <footer id="footer">
+        <p>&copy; 2025 Gerald. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#facebook">Facebook</a>
+            <a href="#twitter">Twitter</a>
+            <a href="#linkedin">LinkedIn</a>
+        </div>
+    </footer>
+    <button id="scroll-to-top" onclick="scrollToTop()">↑</button>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            document.querySelector('header').classList.toggle('dark-mode');
+            document.querySelectorAll('.project-card').forEach(card => card.classList.toggle('dark-mode'));
+            document.querySelector('footer').classList.toggle('dark-mode');
+        }
+
+
+        window.onscroll = function() {
+            const scrollToTopButton = document.getElementById('scroll-to-top');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        };
+
+
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>
+

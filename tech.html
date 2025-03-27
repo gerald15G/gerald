@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation</title>
+  <link rel="stylesheet" href="stylestech.css">
+</head>
+<body>
+
+  <!-- Navbar Section -->
+  <nav id="navbar">
+    <header>Technical Documentation</header>
+    <a href="#HTML_Basics" class="nav-link">HTML Basics</a>
+    <a href="#CSS_Styling" class="nav-link">CSS Styling</a>
+    <a href="#JavaScript_Basics" class="nav-link">JavaScript Basics</a>
+    <a href="#Web_Development" class="nav-link">Web Development</a>
+    <a href="#Best_Practices" class="nav-link">Best Practices</a>
+  </nav>
+
+  <!-- Main Content Section -->
+  <main id="main-doc">
+    <!-- Section 1: HTML Basics -->
+    <section class="main-section" id="HTML_Basics">
+      <header>HTML Basics</header>
+      <p>HTML stands for HyperText Markup Language.</p>
+      <p>It is the standard language for creating web pages.</p>
+      <p>HTML uses a system of tags to define the structure of web content.</p>
+      <p>For example, <code>&lt;h1&gt;Header&lt;/h1&gt;</code> is used for the main header of a page.</p>
+      <p>HTML5 introduced new elements like <code>&lt;article&gt;</code> and <code>&lt;section&gt;</code>.</p>
+      <code>&lt;!DOCTYPE html&gt;</code>
+      <code>&lt;html&gt;</code>
+      <code>&lt;head&gt;</code>
+      <ul>
+        <li><code>&lt;title&gt;</code> tag defines the document's title.</li>
+        <li><code>&lt;meta&gt;</code> tag provides metadata about the document.</li>
+        <li><code>&lt;body&gt;</code> contains the visible content of the document.</li>
+      </ul>
+    </section>
+
+    <!-- Section 2: CSS Styling -->
+    <section class="main-section" id="CSS_Styling">
+      <header>CSS Styling</header>
+      <p>CSS stands for Cascading Style Sheets.</p>
+      <p>It is used for styling the HTML structure.</p>
+      <p>CSS can be applied inline, in the head section, or through an external stylesheet.</p>
+      <code>body { background-color: lightblue; }</code>
+      <code>h1 { font-size: 36px; }</code>
+      <ul>
+        <li>Selectors are used to target elements.</li>
+        <li>Properties define the styles to apply.</li>
+        <li>CSS supports responsive design through media queries.</li>
+      </ul>
+    </section>
+
+    <!-- Section 3: JavaScript Basics -->
+    <section class="main-section" id="JavaScript_Basics">
+      <header>JavaScript Basics</header>
+      <p>JavaScript is a programming language used to create dynamic web content.</p>
+      <p>It allows interaction with users and manipulation of the DOM.</p>
+      <code>let x = 10;</code>
+      <code>console.log(x);</code>
+      <ul>
+        <li>Variables can be declared using <code>let</code>, <code>const</code>, or <code>var</code>.</li>
+        <li>Functions can be defined using <code>function</code> keyword.</li>
+        <li>Events such as clicks or keypresses can trigger JavaScript functions.</li>
+      </ul>
+    </section>
+
+    <!-- Section 4: Web Development -->
+    <section class="main-section" id="Web_Development">
+      <header>Web Development</header>
+      <p>Web development involves building websites using various technologies.</p>
+      <p>It includes front-end (HTML, CSS, JavaScript) and back-end (server-side) development.</p>
+      <code>const express = require('express');</code>
+      <code>app.listen(3000, () => { console.log('Server running'); });</code>
+      <ul>
+        <li>Front-end development deals with user interfaces.</li>
+        <li>Back-end development involves server-side scripting.</li>
+        <li>APIs allow communication between front-end and back-end.</li>
+      </ul>
+    </section>
+
+    <!-- Section 5: Best Practices -->
+    <section class="main-section" id="Best_Practices">
+      <header>Best Practices</header>
+      <p>Web development best practices ensure clean and maintainable code.</p>
+      <p>Code should be structured and commented for easy readability.</p>
+      <code>function calculateTotal(price, tax) { return price + tax; }</code>
+      <code>const result = calculateTotal(100, 20);</code>
+      <ul>
+        <li>Keep code DRY (Don’t Repeat Yourself).</li>
+        <li>Use meaningful variable and function names.</li>
+        <li>Test your code to ensure it functions as expected.</li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Container */
+#main {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+/* Title Styling */
+#title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Image and caption container */
+#img-div {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Image Styling */
+#image {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px; /* Optional: add some rounded corners */
+}
+
+/* Image caption Styling */
+#img-caption {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Tribute Info Styling */
+#tribute-info {
+    font-size: 1.125rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Link Styling */
+#tribute-link {
+    display: block;
+    text-align: center;
+    font-size: 1.125rem;
+    color: #0077cc;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+#tribute-link:hover {
+    text-decoration: underline;
+}
